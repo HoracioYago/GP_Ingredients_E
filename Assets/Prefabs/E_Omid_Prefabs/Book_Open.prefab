@@ -126,6 +126,7 @@ MonoBehaviour:
   requiredItems: []
   waitForObject: 0
   interactiveText: {fileID: 0}
+  bookText: 
 --- !u!135 &914186587693273589
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -145,5 +146,5 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.47785836
-  m_Center: {x: 0, y: 0.20184332, z: 0.00000014901161}
+  m_Radius: 0.6291991
+  m_Center: {x: 0, y: 0.20917463, z: 0.14400953}
