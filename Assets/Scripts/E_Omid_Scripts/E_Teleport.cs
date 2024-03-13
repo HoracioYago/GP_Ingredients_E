@@ -11,6 +11,7 @@ public class E_Teleport : MonoBehaviour
         if (toTeleport!=null)
         {
             other.transform.position = toTeleport.position;
+            other.transform.rotation = toTeleport.rotation;
         }
     }
 }
