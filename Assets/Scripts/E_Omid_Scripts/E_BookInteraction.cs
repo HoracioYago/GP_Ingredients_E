@@ -1,5 +1,7 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 
 public class E_BookInteraction : Interactive
@@ -17,11 +19,16 @@ public class E_BookInteraction : Interactive
         interactiveText.text = bookText;
     }
 
+    void Update()
+    {
+        Debug.Log(Time.time);
+    }
+
     IEnumerator ShowAndHideText()
     {
         interactiveText.CrossFadeAlpha(1f, 1f, false);
-        yield return new WaitForSeconds(3f);
-
+        yield return new WaitForSeconds(1f);
+        Debug.Log("Hide");
         interactiveText.CrossFadeAlpha(0f, 1f, false);
     }
 }
