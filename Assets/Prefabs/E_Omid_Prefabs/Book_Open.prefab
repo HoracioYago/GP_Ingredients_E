@@ -121,12 +121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a76b3de656e14640b006b3f70c2287f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionType: 2
-  onlyOnce: 1
-  requiredItems: []
-  waitForObject: 0
+  bookTextObject: {fileID: 0}
   interactiveText: {fileID: 0}
   bookText: 
+  activationRadius: 15
 --- !u!135 &914186587693273589
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -142,9 +140,9 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.6291991
-  m_Center: {x: 0, y: 0.20917463, z: 0.14400953}
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
