@@ -62,7 +62,6 @@ public class E_BookInteraction : MonoBehaviour
         }
 
 
-        Debug.Log(isClickable);
     }
 
     IEnumerator ShowAndHideText()
