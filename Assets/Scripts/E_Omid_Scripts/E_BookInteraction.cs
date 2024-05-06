@@ -8,6 +8,7 @@ public class E_BookInteraction : MonoBehaviour
 {
     public Text bookTextObject;
     public GameObject interactiveText;
+    public GameObject rightDoorTeleport;
     public string bookText;
     public float activationRadius = 4f;
 
@@ -60,13 +61,14 @@ public class E_BookInteraction : MonoBehaviour
                 interactiveText.SetActive(false);
             }
         }
-
-
-        Debug.Log(isClickable);
     }
 
     IEnumerator ShowAndHideText()
     {
+        if (rightDoorTeleport != null)
+        {
+            Destroy(rightDoorTeleport);
+        }
         bookTextObject.CrossFadeAlpha(1f, 1f, false);
         yield return new WaitForSeconds(3f);
         bookTextObject.CrossFadeAlpha(0f, 1f, false);
